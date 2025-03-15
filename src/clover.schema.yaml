@@ -28,7 +28,7 @@ switches:
     reset: 1
     states: [ "无符", "符" ]
   - name: ascii_punct
-    reset: 0
+    reset: 1
     states: [ 。，, ．， ]
   - name: full_shape
     reset: 0

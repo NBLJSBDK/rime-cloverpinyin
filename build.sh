@@ -33,6 +33,7 @@ cp ../src/sogou_new_words.dict.yaml .
 
 # 生成 data 目录
 mkdir -p ../data
+cp ../rime-english/easy_en.* ../data
 cp ../src/*.yaml ../data
 mv clover.*.yaml THUOCL_*.yaml sogou_new_words.dict.yaml ../data
 

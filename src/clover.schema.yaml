@@ -16,6 +16,7 @@ schema:
       5. 许多智能纠错
   dependencies:
     - emoji
+    - easy_en
 
 switches:
   - name: zh_simp_s2t
@@ -55,6 +56,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
+    - table_translator@english
   filters:
     - simplifier@emoji_suggestion
     - simplifier@symbol_support
@@ -199,4 +201,9 @@ ascii_composer:
     Caps_Lock: noop
     Eisu_toggle: clear
 
-
+english:
+  dictionary: easy_en
+  spelling_hints: 9
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: -1
